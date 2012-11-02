@@ -1,0 +1,16 @@
+$ mongo
+MongoDB shell version: 2.0.4
+connecting to: test
+> help
+> use fb_test
+switched to db fb_test
+> show collections
+attendees
+system.indexes
+> attendees.count()
+Tue May 22 22:58:10 ReferenceError: attendees is not defined (shell):1
+> db.attendees.count()
+70
+> db.attendees.find()
+{ "name" : "Tom Florquin", "id" : "826184172", "rsvp_status" : "attending", "_id" : ObjectId("4fbbfcb5876f040c6a000007") }
+

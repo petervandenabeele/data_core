@@ -1,0 +1,62 @@
+peterv@e6500:~/b/om/data_core/node$ nodeunit test/*
+
+access_token_cache_test
+✔ test_setAccessToken
+
+attendees_test
+✔ test_requestAttendees
+✔ test_attendees
+✔ test_saveAttendees
+
+keys_test
+body = access_token=<cleared>
+✔ test_requestAccessToken
+access_token =<cleared>
+✔ test_accessToken
+access_token =<cleared>
+✔ test_setAccessToken
+
+utils_test
+✔ test_getPage
+TODO:
+1) pagination for large events (e.g. Rock Werchter '314446988567262')
+✔ todo
+
+api_key
+✔ test_readApiKey
+
+event_test
+{ results: 
+   [ { visibility: 'public',
+       status: 'past',
+       maybe_rsvp_count: 0,
+       venue: [Object],
+       id: '63139992',
+       utc_offset: 7200000,
+       time: 1337794200000,
+       waitlist_count: 0,
+       yes_rsvp_count: 16,
+       created: 1335991159000,
+       updated: 1337938713000,
+       event_url: 'http://www.meetup.com/bigdatabe/events/63139992/',
+       description: '<ol>\n<li>Call for papers \n<ol>\n<li>Introduction to Storm (Daan Gerits)</li>\n<li>Apache Giraph (Andre Kelpe)</li>\n</ol>\n</li>\n<li><strong>OK</strong> Call for location</li>\n</ol>\n\n',
+       name: '7th meetup',
+       rating: [Object],
+       group: [Object] } ],
+  meta:
+   { lon: '',
+     count: 1,
+     link: 'https://api.meetup.com/2/events.json/',
+     next: '',
+     total_count: 1,
+     url: 'https://api.meetup.com/2/events.json/?key=<stripped>&status=upcoming&event_id=63139992&order=time&desc=false&offset=0&format=json&page=200&fields=',
+     id: '',
+     title: 'Meetup Events v2',
+     updated: 1351878489794,
+     description: 'Access Meetup events using a group, member, or event id. Events in private groups are available only to authenticated members of those groups. To search events by topic or location, see [Open Events](/meetup_api/docs/2/open_events).',
+     method: 'Events',
+     lat: '' } }
+✔ test_getEvent
+
+OK: 19 assertions (3910ms)
+

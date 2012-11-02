@@ -1,0 +1,17 @@
+On Ubuntu 12.04
+
+sudo apt-get install npm
+sudo npm install -g coffee-script
+
+npm install Array.prototype.forEachAsync
+npm install connect-auth
+npm install connect-mongodb
+npm install future
+npm install futures
+npm install mongojs
+npm install nodeunit
+
+sudo apt-get install mongodb # lots of packages ...
+
+cd ; cd dc/node
+nodeunit test/* # => OK: 12 assertions (5010ms)
